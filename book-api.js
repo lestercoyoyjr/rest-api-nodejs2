@@ -25,3 +25,8 @@ app.post('/book', (req, res) => {
 });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
+
+// GET endpoint
+app.get('/books', (req, res) => {
+    res.json(books);
+});
